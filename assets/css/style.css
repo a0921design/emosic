@@ -67,6 +67,7 @@ html a:hover, body a:hover {
 
 html h2, html h3, html h4, body h2, body h3, body h4 {
   font-weight: 300;
+  line-height: 2;
 }
 
 html p, html li, body p, body li {
@@ -476,14 +477,9 @@ nav ul li a {
 #download .container {
   height: 100%;
   margin: 0 auto;
-  position: relative;
-}
-
-#download .container section {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #download .container section p {
