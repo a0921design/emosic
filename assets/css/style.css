@@ -220,19 +220,16 @@ nav ul li a {
   background: url("../img/index_bg_headline.webp") center/cover no-repeat;
   color: #fff;
   position: relative;
-}
-
-#headline .container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#headline .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }
 
 #headline .container .container__top {
