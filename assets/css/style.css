@@ -70,10 +70,22 @@ html h2, html h3, html h4, body h2, body h3, body h4 {
   line-height: 2;
 }
 
+@media screen and (max-width: 1024px) {
+  html h2, html h3, html h4, body h2, body h3, body h4 {
+    font-weight: 500;
+  }
+}
+
 html p, html li, body p, body li {
   font-size: 1.6rem;
   line-height: 2;
   font-weight: 200;
+}
+
+@media screen and (max-width: 1024px) {
+  html p, html li, body p, body li {
+    font-weight: 300;
+  }
 }
 
 html section h2, body section h2 {
