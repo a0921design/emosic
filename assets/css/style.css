@@ -1,0 +1,492 @@
+@charset "UTF-8";
+@media screen and (min-width: 1375px) {
+  .__bpPC {
+    display: inline-block;
+  }
+  .__bpTab, .__bpSP {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1374px) {
+  .__bpPC, .__bpSP {
+    display: none;
+  }
+  .__bpTab {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .__bpTab {
+    display: none;
+  }
+  .__bpSP {
+    display: block;
+  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  font-family: source-han-sans-cjk-ja,"游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1374px) {
+  html, body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 7px;
+  }
+}
+
+html a, body a {
+  text-decoration: none;
+  color: #000;
+}
+
+html a:hover, body a:hover {
+  opacity: 0.5;
+  transition: .5s;
+}
+
+html h2, html h3, html h4, body h2, body h3, body h4 {
+  font-weight: 300;
+}
+
+html p, html li, body p, body li {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 200;
+}
+
+html section h2, body section h2 {
+  margin-bottom: 4rem;
+  font-size: 4rem;
+}
+
+html section p, body section p {
+  font-size: 2rem;
+}
+
+.__en {
+  font-family: urw-din, sans-serif;
+}
+
+#toggle {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: rgba(17, 17, 17, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  top: 4.3rem;
+  right: 10%;
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#toggle:hover {
+  opacity: 0.8;
+}
+
+#toggle span {
+  width: 3.6rem;
+  height: 0.2rem;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: .2s;
+  border-radius: 0.2rem;
+}
+
+#toggle span#line1 {
+  top: 1.7rem;
+}
+
+#toggle span#line1.line1 {
+  transform: rotate(45deg);
+  left: 1.4rem;
+  top: 3.2rem;
+}
+
+#toggle span#line2 {
+  top: 3.2rem;
+}
+
+#toggle span#line2.line2 {
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#toggle span#line3 {
+  top: 4.7rem;
+}
+
+#toggle span#line3.line3 {
+  transform: rotate(-45deg);
+  left: 1.4rem;
+  top: 3.2rem;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: .5s;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
+nav.showNav {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+.overray {
+  background: #000;
+  position: fixed;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+  transition: .5s;
+}
+
+#overrayTop {
+  top: -50%;
+  opacity: 0;
+}
+
+#overrayTop.showTop {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+#overrayBottom {
+  bottom: -50%;
+  opacity: 0;
+}
+
+#overrayBottom.showBottom {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+#headline {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index_bg_headline.webp") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+#headline .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#headline .container .container__top {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+#headline .container .container__top h1 .logo {
+  width: 36rem;
+  height: auto;
+}
+
+#headline .container .container__top .copy .mainCopy {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: -0.3rem;
+}
+
+#headline .container .container__top .copy .subCopy {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#headline .container .container__bottom .banner img {
+  width: 52rem;
+  height: auto;
+}
+
+@media screen and (max-width: 1374px) {
+  #headline .container .container__bottom .banner img {
+    width: 35rem;
+  }
+}
+
+#introduce {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index_bg_introduce.webp") center/cover no-repeat;
+  background-position: top right;
+  color: #fff;
+  text-align: right;
+}
+
+#introduce .container {
+  width: 79%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#introduce .container section {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#features {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index_bg_features.webp") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+#features .container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#features .container section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#features .container section p {
+  margin-bottom: 4rem;
+}
+
+#features .container section .detailBtn img {
+  width: 34.2rem;
+  height: auto;
+}
+
+@media screen and (max-width: 1374px) {
+  #features .container section .detailBtn img {
+    width: 22.8rem;
+  }
+}
+
+#plan {
+  width: 100%;
+  height: 100%;
+  background: url("../img/index_bg_plan.webp") center/cover no-repeat;
+  background-position: top right;
+  color: #fff;
+  text-align: left;
+}
+
+#plan .container {
+  width: 79%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#plan .container section {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#plan .container section p {
+  margin-bottom: 4rem;
+}
+
+#plan .container section .detailBtn img {
+  width: 34.2rem;
+  height: auto;
+}
+
+@media screen and (max-width: 1374px) {
+  #plan .container section .detailBtn img {
+    width: 22.8rem;
+  }
+}
+
+#download {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#download .bgLogo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background: #000;
+}
+
+#download .bgLogo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  width: 60rem;
+  height: auto;
+}
+
+#download .container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#download .container section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#download .container section p {
+  margin-bottom: 5rem;
+}
+
+#download .container section .dlBtn {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#download .container section .dlBtn img {
+  height: 10rem;
+  width: auto;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  height: 60rem;
+  color: #fff;
+}
+
+footer .fNavArea {
+  height: 44rem;
+  width: 79%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .fNavArea .left .fLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+footer .fNavArea .left .fLogo img {
+  width: 20rem;
+  height: auto;
+}
+
+footer .fNavArea .left .fLogo p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+footer .fNavArea .right {
+  display: flex;
+  gap: 4.6rem;
+}
+
+footer .fNavArea .right section h6 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+footer .fNavArea .right section ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+footer .fNavArea .right section ul li:last-child {
+  margin-bottom: 0;
+}
+
+footer .fNavArea .right a {
+  color: #fff;
+}
+
+footer .copyright {
+  height: 16rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
