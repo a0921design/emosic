@@ -29,8 +29,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   font-family: source-han-sans-cjk-ja,"游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
   line-height: 1;
   font-weight: 300;
@@ -105,7 +105,7 @@ html section p, body section p {
 
 @media screen and (max-width: 1024px) {
   #toggle {
-    right: 5%;
+    right: 3%;
   }
 }
 
@@ -244,6 +244,12 @@ nav ul li a {
   gap: 8rem;
 }
 
+@media screen and (max-width: 600px) {
+  #headline .container {
+    gap: 4rem;
+  }
+}
+
 #headline .container .container__top {
   display: flex;
   gap: 6rem;
@@ -254,6 +260,7 @@ nav ul li a {
   #headline .container .container__top {
     flex-direction: column;
     text-align: center;
+    gap: 4rem;
   }
 }
 
@@ -274,6 +281,12 @@ nav ul li a {
 #headline .container .container__top .copy .subCopy {
   font-size: 2rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  #headline .container .container__bottom .banner {
+    text-align: center;
+  }
 }
 
 #headline .container .container__bottom .banner img {
@@ -322,7 +335,7 @@ nav ul li a {
 @media screen and (max-width: 1024px) {
   #introduce .container {
     width: 100%;
-    padding: 0 5%;
+    padding: 0 3%;
     justify-content: center;
   }
 }
@@ -337,7 +350,7 @@ nav ul li a {
 
 @media screen and (max-width: 1024px) {
   #features {
-    padding: 0 5%;
+    padding: 0 3%;
   }
 }
 
@@ -383,7 +396,7 @@ nav ul li a {
 @media screen and (max-width: 1024px) {
   #plan {
     text-align: center;
-    padding: 0 5%;
+    padding: 0 3%;
   }
 }
 
@@ -433,6 +446,12 @@ nav ul li a {
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  #download {
+    padding: 0 3%;
+  }
+}
+
 #download .bgLogo {
   width: 100%;
   height: 100%;
@@ -477,9 +496,21 @@ nav ul li a {
   gap: 4rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #download .container section .dlBtn {
+    gap: 2rem;
+  }
+}
+
 #download .container section .dlBtn img {
   height: 10rem;
   width: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #download .container section .dlBtn img {
+    height: 8rem;
+  }
 }
 
 footer {
@@ -510,7 +541,7 @@ footer .fNavArea {
     flex-direction: column;
     height: 48rem;
     width: 100%;
-    padding: 0 5%;
+    padding: 0 3%;
   }
 }
 
