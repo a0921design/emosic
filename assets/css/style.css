@@ -762,6 +762,19 @@ nav ul li a {
   padding: 4rem 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #support #form form {
+    width: 54rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #support #form form {
+    width: 100%;
+    padding: 4rem 3%;
+  }
+}
+
 #support #form form ul {
   display: flex;
   flex-direction: column;
@@ -780,6 +793,18 @@ nav ul li a {
   padding: 0 3.8rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #support #form form ul li {
+    padding: 0 2.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #support #form form ul li {
+    padding: 0 5%;
+  }
+}
+
 #support #form form ul li label {
   width: 20rem;
 }
@@ -791,6 +816,18 @@ nav ul li a {
   padding: 0 0.4rem;
   width: 68.4rem;
   border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #support #form form ul li input, #support #form form ul li textarea {
+    width: 48.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #support #form form ul li input, #support #form form ul li textarea {
+    width: 100%;
+  }
 }
 
 #support #form form button {
